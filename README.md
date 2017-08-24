@@ -10,9 +10,8 @@ An input plugin for fluentd collecting Docker events
 
     <source>
       @type docker_events
-      tag debug.docker
-      # events create,start,stop,die,kill,oom
-      events die
+      tag docker.event
+      events attach,commit,copy,create,destroy,detach,die,exec_create,exec_detach,exec_start,export,health_status,kill,oom,pause,rename,resize,restart,start,stop,top,unpause,update
     </source>
 
 * `tag` : Fluentd tag
