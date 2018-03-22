@@ -1,3 +1,5 @@
+require 'fluent/input'
+
 module Fluent
     class DockerEventStreamInput < Input 
         Fluent::Plugin.register_input('docker_events', self)
